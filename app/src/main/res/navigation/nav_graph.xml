@@ -8,11 +8,16 @@
     <fragment
         android:id="@+id/inboxFragment"
         android:name="com.akrio.catchat.InboxFragment"
-        android:label="Inbox"
+        android:label="@string/inbox"
         tools:layout="@layout/fragment_inbox" />
     <fragment
         android:id="@+id/helpFragment"
         android:name="com.akrio.catchat.HelpFragment"
-        android:label="Help"
+        android:label="@string/help"
         tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/sentItemsFragment"
+        android:name="com.akrio.catchat.SentItemsFragment"
+        android:label="@string/sent_items"
+        tools:layout="@layout/fragment_sent_items" />
 </navigation>
