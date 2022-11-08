@@ -4,18 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <item
-        android:id="@+id/inboxFragment"
-        android:icon="@android:drawable/ic_dialog_email"
-        android:title="@string/inbox" />
+        android:title="@string/mail" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/inboxFragment"
+                    android:icon="@android:drawable/ic_dialog_email"
+                    android:title="@string/inbox" />
+
+                <item
+                    android:id="@+id/sentItemsFragment"
+                    android:icon="@android:drawable/ic_menu_send"
+                    android:title="@string/sent_items" />
+            </group>
+        </menu>
+    </item>
 
     <item
-        android:id="@+id/sentItemsFragment"
-        android:icon="@android:drawable/ic_menu_send"
-        android:title="@string/sent_items" />
-
-    <item
-        android:id="@+id/helpFragment"
-        android:icon="@android:drawable/ic_menu_help"
-        android:title="@string/help" />
-
+        android:title="@string/support">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/helpFragment"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="@string/help" />
+            </group>
+        </menu>
+    </item>
 </menu>
